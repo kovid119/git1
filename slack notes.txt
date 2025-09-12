@@ -1,0 +1,22 @@
+https://aws.amazon.com/free/?trk=74413e6a-8eef-4b37-9d39-d088b67a90c5&sc_channel=ps&[…]f.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all
+https://aws.amazon.com/free/?trk=74413e6a-8eef-4b37-9d39-d088b67a90c5&sc_channel=ps&s_kwcid=AL!4422!10!71743360967170!71743883671551&s_kwcid=AL!4422!10!71743360967170!71743883671551&ef_id=ca76e10ee4e01d337bc882f0ffdb1c59:G:s&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all
+
+<VirtualHost *:80>
+    ServerAdmin raghav.lwp@gmail.com
+    DocumentRoot "/var/www/html/abc123"
+    ServerName www.abc123.com
+    ErrorLog logs/abc123.com-error_log
+    CustomLog logs/abc123.com-access_log common
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin raghav.lwp@gmail.com
+    DocumentRoot "/var/www/html/xyz123"
+    ServerName www.xyz123.com
+    ErrorLog logs/xyz123.com-error_log
+    CustomLog logs/xyz123.com-access_log common
+</VirtualHost>
+
+
+Hi All, While creating VPC as part of 1st class, We will have only 1 security group and 1 Internet Gateway (IGW) in a VPC. am i correct?
+Hi Lasya, the only SG is for ssh and the IGW is assigned to Public subnet and where your EC2 is in public subnet then yes
