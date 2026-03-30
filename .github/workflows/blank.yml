@@ -1,0 +1,11 @@
+name: Hello World at 2:10 PM IST
+
+on:
+  schedule:
+    - cron: '40 8 * * *'  # UTC time (08:40 UTC = 14:10 IST)
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello World"
