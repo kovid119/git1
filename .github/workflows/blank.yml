@@ -2,7 +2,7 @@ name: Hello World at 2:10 PM IST
 
 on:
   schedule:
-    - cron: '15 11 * * *'  # UTC time (08:40 UTC = 14:10 IST)
+    - cron: '53 16 * * *'  # UTC time (08:40 UTC = 14:10 IST)
   workflow_dispatch:  
 
 jobs:
